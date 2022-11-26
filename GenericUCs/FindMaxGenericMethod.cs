@@ -1,16 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace GenericsUCs
+﻿namespace GenericsUCs
 {
-    public class GenericFindMax<T> where T : IComparable
+    internal class FindMaxGenericMethod<T>where T : IComparable
     {
-        public static void FindMaxValue(T first, T second, T third)  //UC3-refactor 1 (find max using generic method)
+        public static void FindMaxValue(T first, T second, T third)  
         {
-            if (first.CompareTo(second) > 0 && first.CompareTo(third) > 0) 
+            if (first.CompareTo(second) > 0 && first.CompareTo(third) > 0)
             {
                 Console.WriteLine($"{first} is greater");
             }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace GenericsUCs
 {
-    public class FindMaxGenericClass<T> where T : IComparable //UC3-refactor 2  (extending interface because to have CompareTo().)
+    public class FindMaxGenericClass<T> where T : IComparable //UC3-refactor 2  Generic Class
     {
         public T first, second, third;
         public FindMaxGenericClass(T first, T second, T third)
@@ -15,9 +15,9 @@ namespace GenericsUCs
             this.second = second;
             this.third = third;
         }
-        public T FindMaxValue(T first, T second, T third)  //return type is T and (T's are data types which are unknown ,depends on passed value )
+        public T FindMaxValue(T first, T second, T third)  
         {
-            if (first.CompareTo(second) >= 0 && first.CompareTo(third) >= 0)  //data type is unknown bcoz we are using generic in the method hence error will occur so defined where T and IComparable
+            if (first.CompareTo(second) >= 0 && first.CompareTo(third) >= 0)  
             {
                 Console.WriteLine($"{first} is greater");
                 return first;
