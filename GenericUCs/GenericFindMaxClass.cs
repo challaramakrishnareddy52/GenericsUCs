@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace GenericsUCs
+﻿namespace GenericsUCs
 {
     public class FindMaxGenericClass<T> where T : IComparable //UC3-refactor 2  Generic Class
     {
